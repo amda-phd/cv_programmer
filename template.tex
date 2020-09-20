@@ -1,0 +1,202 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Data}\\\textbf{Engineering},
+        \textbf{Full Stack}\\\textbf{Dev},
+        \textbf{~~~~~~~~OOP~~~~~~~~~},
+        \textbf{~~~~~~Machine~~~~~~}\\\textbf{~~Learning~~},
+        \textbf{~~~~~DevOps~~~~~}
+    }
+}
+
+% Programming skill bars
+\programming{
+    {Go $\textbullet$ R $\textbullet$ LabView $\textbullet$ IDL/ 1.5},
+    {Python $\textbullet$ React.JS $\textbullet$ Git / 3.5},
+    {JavaScript $\textbullet$ Node.JS  $\textbullet$ SQL / 4.5},
+    {Matlab $\textbullet$ \large \LaTeX / 5.5}}
+
+% Projects text
+\education{
+
+\textbf{PhD programme in Plasma Physics and Plasma Fusion} (GPA: A+ \emph{Cum Laude}) \\
+Universidad Carlos III de Madrid \\
+2012 - 2017 | Madrid, Spain
+
+\textbf{Master in Biophysics} (GPA: 8.77 / 10) \\
+Universidad Autónoma de Madrid \\
+2008 - 2009 | Madrid, Spain
+
+\textbf{Degree in Physics} (GPA: 2.11 / 4) \\
+Specialization: Theoretical Physics \\
+Universidad Complutense de Madrid \\
+2003 - 2008 | Madrid, Spain
+}
+
+\languages{
+    \cvskill{Spanish}{5}
+    \cvskill{English}{5}
+    \cvskill{German}{2}
+}
+
+\strengths{
+    \\\cvtag{Imagination}
+    \cvtag{Pop culture references}
+    \\\cvtag{Avid learner}
+    \cvtag{Talking in public}
+    
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Adriana Mart\'in\\de Aguilera} % Your name
+\cvjobtitle{PhD, Data Scientist \& coder} % Job
+% title/career
+\aboutme{Former experimental scientist with an eye for data and interest in growing as a programmer. I might have been called a geek.}
+\cvdate{30th March, 1985}
+%\cvlinkedin{/in/hsgadgil}
+%\cvgithub{opensorceror}
+\cvnumberphone{+34 678 05 79 40} % Phone number
+%\cvsite{hgadgil.com} % Personal website
+\cvmail{adrianamdeaguilera@gmail.com} % Email address
+\cvaddress{Madrid, Spain}
+%\cvdate{\today}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Jul 2020 -}
+		{Present}
+        {Data Scientist}
+        {\href{https://www.axactor.com/}{Axactor}}
+        {}
+        {\begin{itemize}
+        \item Tailored big data analysis and developed machine learning models.
+        \item \textbf{Projects}: optimization of call center working hours, creation and maintenance of datasets scores for payment, contactability and legal outcomes.
+        \item \textbf{Tools}: SQL, Python (pandas, numpy, scikit-learn), Excel, BitBucket, Azure DataFactory, Azure Machine Learning.
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Mar 2020 -}
+		{Jul 2020}
+        {Consultant}
+        {\href{www.lex-soft.com}{LexSoft}}
+        {}
+        {
+        {\begin{itemize}
+        \item Provided specific services for clients using the iManage Work environment, developing custom capabilities through REST APIs and providing customer support.
+        \item \textbf{Projects}: Created a web microservices with a proxy API to provide extra capabilities to the iManage Work suite. The project was requested for an specific client but was designed to be reused in any other iManage distribution.
+        \item \textbf{Tools}: JavaScript, Node.JS (Express.JS), React.JS, Postman, Kubernetes, Jenkins, BitBucket, iManage Work. 
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{Jul 2019 -}
+		{Mar 2020}
+        {Business Intelligence Analyst}
+        {\href{https://www.digitalvirgo.com/}{Digital Virgo Spain S.A.}}
+        {}
+        {
+        {\begin{itemize}
+        \item Primarily developed, tested and deployed NLP chatbots for customer care and general information services. Also in charge of custom REST API creation, testing, documentation and maintenance.
+        \item \textbf{Projects}: Created a general purpose web-based chatbot for Cruz Roja Espa\~na, an appointment scheduler chatbot for Itevelesa, a customer care chatbot for Digital Online Development S.A. Also developed REST APIs for SQL remote querying and a Node.JS boilerplate for hybrid MS BotFramework and DialogFlow chatbot creation.
+        \item \textbf{Tools}: JavaScript, Node.JS (hAPI, Restify, Express), Swagger, DialogFlow, Microsoft BotFramework, MongoDB, SQL, SOAP, Postman, Docker.
+    \end{itemize}}
+        }
+     \\
+     \twentyitem
+   		{Dec 2011 -}
+		{Aug 2016}
+        {Data Scientist and Ph.D Student}
+        {\href{http://www.fusion.ciemat.es/home/}{National Fusion Laboratory} and \href{https://www.euro-fusion.org/devices/jet/}{CCFE-JET}}
+        {}
+        {
+        \begin{itemize}
+        \item In charge of several experiments and tools for the TJ-II and JET plasma reactors. 
+        \item \textbf{Projects}: Designed, supervised and analysed the data for the Magnetic Well Scan experiments in TJ-II and provided maintenance, data and analysis for the fast visible camera in JET.
+        \item \textbf{Tools}: Matlab, \LaTeX, IDL, MDSplus, ImageJ, Corel Draw.
+    \end{itemize}
+    	}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2012 - 2017}
+		{}
+        {FPU Grant, Ph. Doctor candidate}
+        {\href{https://www.uc3m.es/}{UC3M},  \href{http://www.ciemat.es/}{CIEMAT-LNF} and \href{https://www.euro-fusion.org/devices/jet/}{CCFE-JET}}
+        {}
+        {
+       	\textbf{Thesis}: \href{https://e-archivo.uc3m.es/handle/10016/24978}{\emph{Studies of the electromagnetic turbulence and edge phenomena in fusion plasmas}}
+        {\begin{itemize}
+        \item Proposed an experimental programme to analyse the plasma confinement degradation in low magnetic well conditions.
+        \item Involved in several scientific missions to provide experimental aid for the JET tokamak.
+        \vspace{2mm}
+		\end{itemize}}
+        }
+    \twentyitem
+        {2008 - 2011}
+        {}
+        {Predoctoral student}
+        {\href{http://nanociencia.imdea.org/}{IMDEA-Nanoscience} and \href{http://www.cnb.csic.es/index.php/es/investigacion/departamentos-de-investigacion/estructura-de-macromoleculas}{CNB-CSIC}}
+        {}
+        {
+        \textbf{Master Thesis}: \href{https://drive.google.com/open?id=1oGQjBpotnNVcit9QcrBaTAIsPuv4H9pz}{\emph{Developing a magneto-optical intracellular nanomanipulator: bringing single-molecule techniques inside the cell}}
+        \vspace{2mm}
+
+        }
+    \twentyitem
+        {2008}
+        {}
+        {Research trainee}
+        {\href{http://nuclear.fis.ucm.es/}{Nuclear Physics Department - UCM}}
+        {}
+        {
+        \textbf{Project}: \href{https://drive.google.com/open?id=1hC6z1AJrOAY0hH-OgYCG0hBnCQOkAaPH}{\emph{Simulations of the PET scintillators using LITRANI} research project.}
+        }
+\end{twenty}
+
+%\section{Publications}
+%L. Antonie, H. Gadgil, G. Grewal, and K. Inwood, “Historical Data Integration - A Study of WWI Canadian Soldiers,” in 2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW), pp. 186-193, IEEE, 2016. \vspace{2mm}
+
+\end{document} 
