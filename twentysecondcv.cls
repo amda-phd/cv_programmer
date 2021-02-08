@@ -219,7 +219,7 @@
 
     %------------------------------------------------
     
-    \vspace{1.5mm}
+    \vspace{1mm}
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{0.7cm} @{\hskip 0.5cm}p{5cm}}
     \ifthenelse{\equal{\aboutme}{}}{}{
@@ -258,6 +258,13 @@
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail} \\}
+    \ifthenelse{\equal{\cvgithub}{}}{}{
+            {$
+             \begin{array}{l}
+             \hspace{1.5mm} \huge \textnormal{\faGithub}
+             \end{array}
+             $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
+            }   
     \ifthenelse{\equal{\cvaddress}{}}{}{
             {$
               \begin{array}{l}
@@ -273,13 +280,6 @@
     %          \end{array}
     %          $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
     %        }  
-    %    \ifthenelse{\equal{\cvgithub}{}}{}{
-    %        {$
-    %          \begin{array}{l}
-    %          \hspace{3mm} \huge \textnormal{\faGithub}
-    %          \end{array}
-    %          $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
-    %        }   
             
     \end{tabular}
 
@@ -293,7 +293,7 @@
         
         %------------------------------------------------
         
-        \vspace{1mm}
+        \vspace{-0.5mm}
        
 	\profilesection{Programming}{1.4cm}
 
