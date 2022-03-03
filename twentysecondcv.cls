@@ -89,6 +89,7 @@
 \definecolor{materialorange}{HTML}{FF5722}
 \definecolor{linkedin}{HTML}{0085AE}
 \definecolor{test}{HTML}{0077be}
+\definecolor{stackoverflow}{HTML}{ec7c23}
 \definecolor{yt}{HTML}{c71610}
 
 \ifdefined\@cv@print
@@ -229,35 +230,34 @@
               \end{array}
               $} 
             & \aboutme\\}
-     \ifthenelse{\equal{\cvdate}{}}{}{
-      		{$
-              \begin{array}{l}
-              \hspace{1mm} \LARGE \textnormal{\faBirthdayCake} 
-              \end{array}
-              $} 
-            & \cvdate\\}        
+    %  \ifthenelse{\equal{\cvdate}{}}{}{
+    %   		{$
+    %           \begin{array}{l}
+    %           \hspace{1mm} \LARGE \textnormal{\faBirthdayCake} 
+    %           \end{array}
+    %           $} 
+    %         & \cvdate\\}   
+      \ifthenelse{\equal{\cvmail}{}}{}{
+        {$
+          \begin{array}{l}
+          \hspace{1mm} \LARGE \textnormal{\textcolor{yt}{\faEnvelopeO}}
+          \end{array}
+          $} 
+        & \href{mailto:\cvmail}{\cvmail} \\}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
       		{$
               \begin{array}{l}
-              \hspace{2.5mm} \Huge \textnormal{\faMobile} 
+              \hspace{2.5mm} \LARGE \textnormal{\faPhone} 
               \end{array}
               $} 
             & \cvnumberphone\\}
-            
-     % \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
-     %       {$
-     %         \begin{array}{l}
-     %         \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
-     %         \end{array}
-     %         $} 
-     %       & \href{http://\cvsite}{\cvsite} \\}
-      \ifthenelse{\equal{\cvmail}{}}{}{
+    \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
-              \begin{array}{l}
-              \hspace{1mm} \LARGE \textnormal{\textcolor{yt}{\faEnvelopeO}}
-              \end{array}
-              $} 
-            & \href{mailto:\cvmail}{\cvmail} \\}
+             \begin{array}{l}
+             \hspace{1mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedinSquare}}
+             \end{array}
+             $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
+            }     
     \ifthenelse{\equal{\cvgithub}{}}{}{
             {$
              \begin{array}{l}
@@ -265,21 +265,23 @@
              \end{array}
              $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
             }   
-    \ifthenelse{\equal{\cvaddress}{}}{}{
-            {$
+     \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
+           {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{yt}{\faMapMarker}}
+              \hspace{2mm} \LARGE \textnormal{\textcolor{stackoverflow}{\faStackOverflow}}
               \end{array}
               $} 
-            & \cvaddress \\}
+            & \href{https://stackoverflow.com/users/14979932/amda}{\cvsite} \\}
+
+    % \ifthenelse{\equal{\cvaddress}{}}{}{
+    %         {$
+    %           \begin{array}{l}
+    %           \hspace{3mm} \huge \textnormal{\textcolor{yt}{\faMapMarker}}
+    %           \end{array}
+    %           $} 
+    %         & \cvaddress \\}
       
-    %   \ifthenelse{\equal{\cvlinkedin}{}}{}{
-    %        {$
-    %          \begin{array}{l}
-    %          \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
-    %          \end{array}
-    %          $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
-    %        }  
+    
             
     \end{tabular}
 
@@ -295,14 +297,14 @@
         
         \vspace{-0.5mm}
        
-	\profilesection{Programming}{1.4cm}
+	\profilesection{Tech stack}{2.35cm}
 
 		 \programming
          
     
          
         \vspace{1mm}
-        \profilesection{Education}{2.6cm} 
+        \profilesection{Education}{2.65cm} 
         
         \education
         
